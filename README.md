@@ -47,4 +47,15 @@ void main() {
 }
 ```
 
-- A sample command-line application with an entrypoint in `bin/`, library code in `lib/`, and example unit test in `test/`.  
+### Casting
+
+```dart
+void main(List<String> arguments) {
+  String sNum = "12345";
+  int iNum = int.parse(sNum);
+  sNum = iNum.toString();
+  double dNum1 = double.parse(sNum);
+  double? dNum2 = double.tryParse("1.2a");
+  print('parse: $dNum1, tryParse: $dNum2');
+}
+```
